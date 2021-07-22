@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>ເພີ່ມ ໄອພີ</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+  <ion-card-content>
+    <h2>ຕົວຢ່າງIP:</h2>
+    <h4>192.168.1.21</h4>
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-card-content>
+    <ion-label>IP:</ion-label>
+    <ion-input (keyup)="keyupGetip($event)" type="text" placeholder="ກາລຸນາເພີ່ມໄອພີ"></ion-input>
+    <ion-button expand="full" class="ion-margin" (click)="saveip()">ເພີ່ມIP</ion-button>
+  </ion-card-content>
+</ion-card>
+</ion-content>
