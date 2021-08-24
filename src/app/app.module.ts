@@ -26,10 +26,11 @@ import { BluetoothSerial } from '@ionic-native/bluetooth-serial/ngx';
 import { Printer } from '@ionic-native/printer/ngx';
 
 import {PrinterService} from './../printer_bluetoothserial/printer.service';
-import {ProductService} from "src/service/product.service"
+import {ProductService} from "src/service/product.service";
+import { ListOrderPipe } from './list-order.pipe'
 
 @NgModule({
-  declarations: [AppComponent ],
+  declarations: [AppComponent, ListOrderPipe ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [

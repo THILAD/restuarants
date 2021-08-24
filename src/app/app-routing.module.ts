@@ -135,7 +135,11 @@ const routes: Routes = [
   {
     path: 'modal-create-ip',
     loadChildren: () => import('./modal-create-ip/modal-create-ip.module').then( m => m.ModalCreateIpPageModule)
+  },  {
+    path: 'list-order',
+    loadChildren: () => import('./list-order/list-order.module').then( m => m.ListOrderPageModule)
   },
+
 
 
 
